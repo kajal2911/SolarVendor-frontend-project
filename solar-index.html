@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shrisahil Electricals & Power Solutions</title>
+  <link rel="stylesheet" href="solar-style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <img src="D:/ShriSahil-Solar/solarlogo2.jpg" alt="logo" class="logo">
+    <div class="brand">SHRISAHIL ELECTRICALS & POWER SOLUTIONS</div>
+    <ul class="nav-links">
+      <li><a href="solar-index.html">Home</a></li>
+      <li><a href="solar-services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="hero">
+    <div class="hero-box">
+      <div class="title">SHRISAHIL ELECTRICALS & POWER SOLUTIONS</div>
+      <div class="subtitle">🌞 Central Government Approved Solar Contractor & Rooftop Vendor — H.T/L.T lines, Transformers, Street Lights, Underground Cabling and Rooftop Solar for homes, hotels, hospitals, institutions & industries.</div>
+      <div class="cta">
+        <a class="btn" href="tel:+919561662151">📞 Call Now</a>
+        <a class="btn secondary" href="services.html">⚡ Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="approved-box">
+      <div class="inner">
+        <div class="txt">✅ Central Government Approved Vendor — Trusted & Certified</div>
+      </div>
+    </div>
+
+    <section class="about">
+      <h2>About Us</h2>
+      <p>We are Shrisahil Electricals & Power Solutions. We specialize in government-approved solar and electrical projects with experienced teams delivering reliable installations, maintenance and audits. Owner: Mr. Rupnawar K.A. (Major)</p>
+    </section>
+  </div>
+
+  <footer>
+    <img src="D:/ShriSahil-Solar/solarlogo2.jpg"alt="logo" class="footer-logo">
+    <p><strong>Owner 👨‍💼 :</strong> Mr. Rupnawar K.A. (Major)</p>
+    <p>📍 Flat no.3, Ramruday App. Rui, Baramati-413102</p>
+    <p>📧 shrisahil5111@gmail.com | 📞 9561662151 / 7620524887 / 9673747511</p>
+    <p>© 2025 Shrisahil Electricals & Power Solutions</p>
+  </footer>
+  <script>
+      const cards = document.querySelectorAll('.service-card');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, { threshold: 0.2 });
+
+      cards.forEach(card => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(30px)";
+        observer.observe(card);
+      });
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
